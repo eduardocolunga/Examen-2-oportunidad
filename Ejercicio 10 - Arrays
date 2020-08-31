@@ -1,0 +1,18 @@
+function setup() {
+  button = createButton('Numero Faltante');
+  button.position(125, 120);
+  button.mousePressed(solution);
+}
+
+function solution(a) {
+var a = [1, 2, 3, 5];
+  count = 5;
+var missing = [];
+
+for (var i = 1; i <= count; i++) {
+  if (a.indexOf(i) == -1) {
+    missing.push(i);
+    console.log(missing)
+  }
+}
+}
