@@ -1,0 +1,20 @@
+let inp, inp2, inp3, value;
+
+function setup() {
+  inp = createInput('Inicio');
+  inp2 = createInput('Final');
+  inp3 = createInput('Distancia por salto');
+ 
+  button = createButton('Enviar');
+  button.position(200, 130);
+  button.mousePressed(myInputEvent);
+  }
+
+function myInputEvent(X,Y,D) {
+  X = int(inp.value());
+  Y = int(inp2.value());
+  D = int(inp3.value())
+  Z = (Y - X)/D;
+  value = round(Z);
+console.log('El conejo llega al final en', value, 'saltos')
+ }
