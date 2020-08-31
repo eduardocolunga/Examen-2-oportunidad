@@ -1,0 +1,31 @@
+let r = 224;
+let g = 224;
+let b = 224;
+
+function setup() {
+  createCanvas(100, 100);
+}
+
+function draw() {
+  background(r, g, b);
+  fill(255, 255, 255);
+  rect(35, 35, 25, 25);
+}
+
+function mousePressed() {
+let green = 255;
+let gray = 255;
+  if (mouseX >= 35 && mouseX <= 60 && mouseY >= 35 && mouseY <= 60) {
+  r = 0;
+  g = 255;
+  b = 0;
+  } 
+  else{
+  r = 224;
+  g = 224;
+  b = 224;
+  }
+  {
+    print(r, g, b)
+  }
+}
