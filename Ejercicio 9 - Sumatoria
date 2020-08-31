@@ -1,0 +1,7 @@
+function sumatoria([m, n]){
+    if (m == n) {
+      return m;
+    }
+    return m + sumatoria([m + 1,n]);
+  }
+console.log(sumatoria([8,20]))
