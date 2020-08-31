@@ -1,0 +1,15 @@
+let inp, value;
+
+function setup() {
+  inp = createInput('');
+ 
+  button = createButton('Enviar');
+  button.position(60, 130);
+  button.mousePressed(myInputEvent);
+  }
+
+function myInputEvent() {
+  n = int(inp.value());
+  value = (n * 249972.79); 
+      console.log('Total en MXN: ', value);
+  }
