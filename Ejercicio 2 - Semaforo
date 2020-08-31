@@ -1,0 +1,48 @@
+let redLight = 'red'
+let yellowLight = 'yellow'
+let greenLight = 'green'
+let number;
+
+
+function setup() {
+  createCanvas(200,200)
+}
+
+function draw() {
+  background(220);
+  rectMode(CENTER)
+  fill(100);
+      rect(width / 2, height / 2, 80, 160);
+      fill(redLight)
+  ellipse(width / 2, height / 2 - 50, 40, 40)
+
+  fill(yellowLight)
+  ellipse(width / 2, height / 2, 40)
+
+  fill(greenLight)
+  ellipse(width / 2, height / 2 + 50, 40, 40)
+}
+
+  function mousePressed(){
+    number = int(random(1, 4));
+      
+  if (number == 1) {
+  redLight ='red'
+  yellowLight = 'white'
+  greenLight = 'white'
+  
+  }
+ else if (number == 2) {
+ redLight ='white'
+ yellowLight = 'yellow'
+ greenLight = 'white'
+  }
+  else if (number == 3) {
+  redLight ='white'
+  yellowLight = 'white'
+  greenLight = 'green'
+  }
+    {
+    print(number);
+    }
+  }
