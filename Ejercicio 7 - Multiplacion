@@ -1,0 +1,28 @@
+let inp, inp2, inp3, inp4, a, b, c, d;
+
+function setup() {
+  inp = createInput('');
+  inp2 = createInput('');
+  inp3 = createInput('');
+  inp4 = createInput('');
+  
+  button = createButton('Enviar');
+  button.position(300, 130);
+  button.mousePressed(multiplicar);
+}
+
+function multiplicar() {
+  a = int(inp.value());
+  b = int(inp2.value());
+  c = int(inp3.value());
+  d = int(inp4.value());
+var array = [a, b, c, d];
+  
+  if (a > 0 && b > 0 && c > 0 && d > 0){
+var ans = array.reduce(Math.imul);
+console.log(ans);
+  }
+  else{
+    console.log('Escoge numero diferente a 0')
+  }
+  }
